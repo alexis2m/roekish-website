@@ -7,6 +7,8 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import { Badge } from "@/components/ui/badge"
+
 
 export default function OpenSeats() {
   return (
@@ -31,24 +33,24 @@ export default function OpenSeats() {
           </TableHeader>
           <TableBody>
           <TableRow>
-              <TableCell className="font-medium">NeoNid</TableCell>
+              <TableCell className="font-medium text-left">NeoNid</TableCell>
               <TableCell className="text-right">SaaS</TableCell>
               <TableCell className="text-right">12/03</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell className="font-medium">StarStream</TableCell>
+              <TableCell className="font-medium text-left">StarStream</TableCell>
               <TableCell className="text-right">Audit</TableCell>
               <TableCell className="text-right">18/02</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell className="font-medium">TurboTrône</TableCell>
-              <TableCell className="text-right">Site web</TableCell>
+              <TableCell className="font-medium text-left">TurboTrône</TableCell>
+              <TableCell className="text-right">CRM</TableCell>
               <TableCell className="text-right">25/02</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell className="font-medium">TurboTech</TableCell>
-              <TableCell className="text-right">Site web</TableCell>
-              <TableCell className="text-right">28/02</TableCell>
+              <TableCell className="font-medium text-left">TurboTech{" "}<Badge variant="outline">libre</Badge></TableCell>
+              <TableCell className="text-right"><Badge variant="outline">à définir</Badge></TableCell>
+              <TableCell className="text-right"><Badge variant="outline">à définir</Badge></TableCell>
             </TableRow>
           </TableBody>
         </Table>
