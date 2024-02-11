@@ -14,7 +14,7 @@ export default function OpenSeats() {
   return (
     <div className="flex flex-col mt-10 justify-center text-center items-center">
       <h2 className="text-2xl font-bold text-center">Places disponibles</h2>
-      <div className='flex items-center w-1/2'>
+      <div className='flex items-center sm:w-1/2'>
         <p className="text-center">
           Pour garantir une qualité optimale, et une communication parfaite, nos
           places sont limitées. Cette page vous renseignera sur les places
