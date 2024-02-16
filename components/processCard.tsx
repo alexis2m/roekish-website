@@ -10,7 +10,14 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 
-export default function ProcessCard({ title, description, contentText, buttonLink, buttonText, target }) {
+export default function ProcessCard({ title, description, contentText, buttonLink, buttonText, target }: { 
+  title: string; 
+  description: string; 
+  contentText: string; 
+  buttonLink: string; 
+  buttonText: string; 
+  target: string; 
+}) {
   return (
     <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 rounded-lg">
       <Card>
