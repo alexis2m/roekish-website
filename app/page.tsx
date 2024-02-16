@@ -5,9 +5,8 @@ import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { Toaster } from 'sonner';
 import OpenSeats from './components/openSeats';
+import Process from './components/process';
 import TextTransition, { presets } from 'react-text-transition';
-
-
 
 export default function Home() {
   const TEXTS = ['startup', 'TPE', 'PME'];
@@ -104,7 +103,12 @@ export default function Home() {
               <h2 className="text-center text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-6xl">
                 Développeurs de logiciels pour{' '}
                 <span className="inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
-                  <TextTransition className='className="inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-black dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400' springConfig={presets.default}>{TEXTS[index % TEXTS.length]}</TextTransition>
+                  <TextTransition
+                    className='className="inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-black dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400'
+                    springConfig={presets.default}
+                  >
+                    {TEXTS[index % TEXTS.length]}
+                  </TextTransition>
                 </span>
               </h2>
               <p className="mt-6 text-center text-lg leading-6 text-gray-600 dark:text-gray-200">
@@ -136,9 +140,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <section id="process">
+            <Process />
+          </section>
           <section id="openseats">
             <OpenSeats />
           </section>
+
           <footer>
             <div className="flex items-center justify-center py-8">
               <span className="text-sm text-neutral-800 dark:text-neutral-200">
